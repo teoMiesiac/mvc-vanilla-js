@@ -1,7 +1,7 @@
 import type TodoModel from "../models/todoList.model";
 import type TodoController from "../controllers/todoList.controller";
-
-class TodoListView {
+import Observer from "../utils/Observer";
+class TodoListView extends Observer {
   /** DOM elements */
   constainer: HTMLDivElement;
   input: HTMLInputElement;
@@ -12,6 +12,7 @@ class TodoListView {
   todoController: TodoController;
 
   constructor(todoListModel: TodoModel, todoListController: TodoController) {
+    super();
     this.todoModel = todoListModel;
     this.todoController = todoListController;
 

@@ -1,4 +1,3 @@
-import "./styles.css";
 import TodoListView from "./views/todoList.view";
 import TodoListModel from "./models/todoList.model";
 import TodoListController from "./controllers/todoList.controller";
